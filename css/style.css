@@ -1,0 +1,47 @@
+/* COLORI */
+:root {
+    --my-dark: #2c3e50;
+    --my-primary: #1abc9c;
+    --my-dark-gray: #3a546d;
+}
+
+/* DEBUG */
+[class*="col"] {
+    border: 1px dashed black;
+}
+
+/* REGOLE GENERALI */
+section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+/* ------ HEADER ------ */
+header {
+    background-color: var(--my-dark);
+}
+
+header .row {
+    background-color: magenta;
+}
+
+/* ------ MAIN ------ */
+/* START */
+#start {
+    background-color: var(--my-primary);
+}
+
+/* ABOUT */
+#about {
+    background-color: var(--my-primary);
+}
+
+/* ------ FOOTER ------ */
+/* FOOTER TOP */
+#footer-top {
+    background-color: var(--my-dark-gray);
+}
+
+#footer-bottom {
+    background-color: var(--my-dark);
+}
