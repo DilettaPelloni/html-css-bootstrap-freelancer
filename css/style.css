@@ -5,15 +5,24 @@
     --my-dark-gray: #3a546d;
 }
 
-/* DEBUG */
-[class*="col"] {
-    border: 1px dashed black;
-}
-
 /* REGOLE GENERALI */
 section {
     padding-top: 3rem;
     padding-bottom: 3rem;
+}
+
+.star-divider .bi-star-fill {
+    font-size: 2.5em;
+    vertical-align: middle;
+}
+
+.star-divider hr {
+    display: inline-block;
+    width: 15%;
+    border: 2px solid;
+    opacity: 1;
+    border-radius: 50px;
+    vertical-align: middle;
 }
 
 /* ------ HEADER ------ */
@@ -21,8 +30,20 @@ header {
     background-color: var(--my-dark);
 }
 
-header .row {
-    background-color: magenta;
+header .navbar li a {
+    color: white;
+}
+
+header .navbar .navbar-toggler {
+    border-color: white;
+}
+
+header .navbar .bi-list {
+    color: var(--bs-gray);
+} 
+
+.nav-link:focus, .nav-link:hover {
+    color: var(--my-primary);
 }
 
 /* ------ MAIN ------ */
@@ -31,9 +52,68 @@ header .row {
     background-color: var(--my-primary);
 }
 
+#start img {
+    width: 300PX;
+}
+
+/* PORTFOLIO */
+#portfolio {
+    color: var(--my-dark);
+}
+
+#portfolio .overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(26, 188, 156, 0.7);
+    display: none;
+}
+
+#portfolio .img-box:hover .overlay{
+    display: block;
+}
+
 /* ABOUT */
 #about {
     background-color: var(--my-primary);
+}
+
+/* CONTACT */
+#contact {
+    color: var(--my-dark);
+}
+
+#contact input:not([type="submit"]),
+#contact textarea {
+    border-width: 0 0 1px;
+    border-radius: 0;
+    border-color: var(--bs-gray-500);
+    padding: 1em 0;
+}
+
+#contact textarea {
+    height: 200px;
+}
+
+#contact input::placeholder,
+#contact textarea::placeholder {
+    color: var(--my-dark-gray);
+    opacity: 1;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+#contact .form-control:hover,
+#contact .form-control:focus {
+    outline: none;
+    border-width: 0 0 1px;
+    box-shadow: none;
+    border-color: var(--my-primary);
+}
+
+#contact .btn {
+    background-color: var(--my-primary);
+    color: white;
+    font-size: 1.3em;
 }
 
 /* ------ FOOTER ------ */
@@ -42,6 +122,33 @@ header .row {
     background-color: var(--my-dark-gray);
 }
 
+#footer-top .social-box a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+}
+
+#footer-top a {
+    text-decoration: none;
+    color: var(--my-primary);
+}
+#footer-top a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+#footer-top .social-box a:hover {
+    color: var(--my-primary);
+    border-color: var(--my-primary);
+}
+
+/* FOOTER BOTTOM */
 #footer-bottom {
     background-color: var(--my-dark);
 }
